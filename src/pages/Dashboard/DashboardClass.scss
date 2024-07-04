@@ -1,0 +1,85 @@
+.Dashboard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 15px;
+  gap: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  > .Dashboard--card {
+    width: 100px;
+    min-width: 500px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3px;
+    
+    > main {
+      height: 100%;
+      padding: 10px 15px;
+      color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+
+      svg {
+        width: 70px;
+        height: 75px;
+        top: -10px;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+      }
+
+      > div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+
+      span {
+        font-size: 50px;
+      }
+    }
+
+    > footer {
+      padding: 10px 15px;
+      height: 41px;
+      background-color: #fff;
+    }
+  }
+
+
+  .clientes {
+    color: #337ab7;
+    background-color: #337ab7;
+    border: #337ab7 1px solid;
+
+    a {
+      color: #337ab7;
+    }
+  }
+
+  .partes {
+    color: #4CAF50;
+    background-color: #4CAF50;
+    border: #4CAF50 1px solid;
+
+    a {
+      color: #4CAF50;
+    }
+  }
+
+}
